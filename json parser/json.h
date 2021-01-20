@@ -22,7 +22,7 @@ namespace Json {
     const auto& AsUnorderedMap() const {
       return std::get<std::unordered_map<std::string, Node>>(*this);
     }
-    int AsDouble() const {
+    double AsDouble() const {
       return std::get<double>(*this);
     }
     int AsBool() const {
